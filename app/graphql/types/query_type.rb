@@ -29,5 +29,16 @@ module Types
       User.find(id)
     end
 
+    field :all, AllType, null: true
+
+    def all()
+      {
+        hello: 'world',
+        users: User.all,
+        posts: Post.all,
+        comments: Comment.all
+      }
+    end
+
   end
 end
