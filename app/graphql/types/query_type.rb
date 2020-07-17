@@ -18,5 +18,23 @@ module Types
     def post(id:)
       Post.find(id)
     end
+
+    field :comment, CommentType, null: true do
+      argument :id, ID, required: true
+    end
+
+    def comment(id:)
+      Comment.find(id)
+    end
+
+
+    field :user, UserType, null: true do
+      argument :id, ID, required: true
+    end
+
+    def user(id:)
+      User.find(id)
+    end
+
   end
 end
