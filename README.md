@@ -121,6 +121,6 @@
 ```
 
 ## Screenshots
-![user](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_user)
-![post](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_post)
-![comment](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_comment)
+![user](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_user.png)
+![post](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_post.png)
+![comment](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_comment.png)
