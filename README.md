@@ -119,8 +119,49 @@
     }
 }
 ```
+* More, you can build your own custom format of an API
+```
+# GraphQL Query
+{
+  all {
+    users {
+      name
+    }
+    posts {
+      title
+    }
+    comments {
+      content
+    }
+  }
+}
+
+# Response Body
+{
+    "data": {
+        "all": {
+            "users": [
+                {
+                    "name": "Sam"
+                }
+            ],
+            "posts": [
+                {
+                    "title": "Hi sam"
+                }
+            ],
+            "comments": [
+                {
+                    "content": "Great!"
+                }
+            ]
+        }
+    }
+}
+```
 
 ## Screenshots
 ![user](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_user.png)
 ![post](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_post.png)
 ![comment](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_comment.png)
+![all](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_all.png)
