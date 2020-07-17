@@ -124,6 +124,7 @@
 # GraphQL Query
 {
   all {
+    hello
     users {
       name
     }
@@ -140,6 +141,7 @@
 {
     "data": {
         "all": {
+            "hello": "world",
             "users": [
                 {
                     "name": "Sam"
