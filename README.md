@@ -162,8 +162,41 @@
 }
 ```
 
+## GraphQL mutation examples
+
+* Add a new user with parameters
+
+```
+# GraphQL Query
+mutation {
+  addUser(
+      name: "AwesomeSam",
+      email: "sam@graphql.com",
+      password: "123"
+  ) {
+    id
+    name
+    email
+    password
+  }
+}
+
+# Response Body
+{
+    "data": {
+        "addUser": {
+            "id": "3",
+            "name": "AwesomeSam",
+            "email": "sam@graphql.com",
+            "password": "123"
+        }
+    }
+}
+```
+
 ## Screenshots
 ![user](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_user.png)
 ![post](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_post.png)
 ![comment](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_comment.png)
 ![all](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_all.png)
+![add_user](https://github.com/shrimp509/graphql-rails-helloworld/blob/master/screenshots/graphql_add_user.png)
